@@ -9,12 +9,18 @@ class SearchBar extends Component {
   };
 
   handleChange = (e) => {
+    this.setState({
+      highlightIndex: -1,
+    });
     this.props.changeText(e.target.value);
   };
 
   selectOption = (e) => {
     this.search.value = "";
     this.props.selectOption(e);
+    this.setState({
+      highlightIndex: -1,
+    });
   };
   handleSubmit = (e) => {
     e.preventDefault();
@@ -22,6 +28,9 @@ class SearchBar extends Component {
       this.selectOption(
         this.props.searchResult[this.state.highlightIndex].districtcode
       );
+    this.setState({
+      highlightIndex: -1,
+    })
   };
 
   arrowHighlight = (e) => {
