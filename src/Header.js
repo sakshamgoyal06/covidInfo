@@ -15,7 +15,7 @@ const Header = () => {
       <div
         style={{
           padding: "15px 0px 15px 0px",
-          marginBottom: "10px",
+          marginBottom: "2vh",
           fontSize: "35px",
           fontFamily: "Helvetica Neue",
           fontWeight: "lighter",
