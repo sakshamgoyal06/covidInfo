@@ -6,7 +6,7 @@ import Header from "./Header";
 import "./App.css";
 import WorldMap from "./indiaMap";
 import SelectedDistrict from "./selectedDistrict";
-import Footer from "./Footer"
+import Footer from "./Footer";
 class App extends Component {
   state = {
     data: [],
@@ -114,30 +114,37 @@ class App extends Component {
       <div className="App">
         <Header />
         <Search data={this.data} selectFunction={this.selectFunction} />
-        <table width="100%">
-          <tbody>
-            <tr align="center">
-              <td width={this.state.isSelected === false ? "100%" : "60%"}>
-                <WorldMap
-                  data={this.state.data}
-                  districtMap={this.state.districtMap}
-                  stateMap={this.state.stateMap}
-                  selectFunction={this.selectFunction}
-                  selectedDistrict={this.state.selectedDistrict}
-                />
-              </td>
-              {this.state.isSelected === false ? null : (
-                <td width="40%">
-                  <SelectedDistrict
-                    district={this.state.selectedDistrict}
+        <div
+          style={{
+            minHeight: "80vh",
+            paddingTop: "5vh",
+          }}
+        >
+          <table width="100%">
+            <tbody>
+              <tr align="center">
+                <td width={this.state.isSelected === false ? "100%" : "60%"}>
+                  <WorldMap
+                    data={this.state.data}
+                    districtMap={this.state.districtMap}
+                    stateMap={this.state.stateMap}
                     selectFunction={this.selectFunction}
+                    selectedDistrict={this.state.selectedDistrict}
                   />
                 </td>
-              )}
-            </tr>
-          </tbody>
-        </table>
-        <Footer/>
+                {this.state.isSelected === false ? null : (
+                  <td width="40%">
+                    <SelectedDistrict
+                      district={this.state.selectedDistrict}
+                      selectFunction={this.selectFunction}
+                    />
+                  </td>
+                )}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <Footer />
       </div>
     );
   }

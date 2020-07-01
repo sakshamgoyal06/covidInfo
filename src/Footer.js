@@ -7,6 +7,8 @@ const Footer = () => {
       align="center"
       style={{
         backgroundColor: Colors.brandIndigo,
+        minHeight: "10vh",
+        bottom: "0",
         width: "100%",
         align: "center",
       }}

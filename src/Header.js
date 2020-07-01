@@ -1,29 +1,30 @@
 import React from "react";
 import Colors from "./colors";
 
-
-const Header = () => { 
-    return (
-      <div align="center"
+const Header = () => {
+  return (
+    <div
+      align="center"
+      style={{
+        minHeight: "10vh",
+        backgroundColor: Colors.brandIndigo,
+        width: "100%",
+        align: "center",
+      }}
+    >
+      <div
         style={{
-          backgroundColor: Colors.brandIndigo,
-                width: "100%",
-                align:"center"
+          padding: "15px 0px 15px 0px",
+          marginBottom: "10px",
+          fontSize: "35px",
+          fontFamily: "Helvetica Neue",
+          fontWeight: "lighter",
+          color: Colors.brandLime,
         }}
       >
-            <div style={{
-                padding: "15px 0px 15px 0px",
-                marginBottom:"10px",
-                fontSize: "35px",
-                fontFamily: "Helvetica Neue",
-                fontWeight:"lighter",
-                color: Colors.brandLime,
-        }}
-        >
-          Covid Info Project
-        </div>
+        Covid Info Project
       </div>
-    );
-    
-}
+    </div>
+  );
+};
 export default Header;
