@@ -141,9 +141,17 @@ class App extends Component {
                   </td>
                 )}
               </tr>
+
             </tbody>
           </table>
         </div>
+         <iframe
+                title="myframe"
+                style={{ width: "120px", height: "240px", marginWidth:"0", marginHeight:"0",
+                scrolling:"no",
+                frameBorder:"0",}}
+                src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=sakshamgoyal0-21&marketplace=amazon&region=IN&placement=B0834DLJG5&asins=B0834DLJG5&linkId=0c4011f16550b6ac0c45a29849b6ac75&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066C0&bg_color=FFFFFF"
+              ></iframe>
         <Footer />
       </div>
     );
