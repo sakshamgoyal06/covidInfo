@@ -156,7 +156,7 @@ class App extends Component {
           }}
           src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=sakshamgoyal0-21&marketplace=amazon&region=IN&placement=B0834DLJG5&asins=B0834DLJG5&linkId=0c4011f16550b6ac0c45a29849b6ac75&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066C0&bg_color=FFFFFF"
         ></iframe>
-        
+
         <iframe
           style={{
             width: "120px",
@@ -167,6 +167,17 @@ class App extends Component {
             frameBorder: "0",
           }}
           src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=sakshamgoyal0-21&marketplace=amazon&region=IN&placement=B07TFD7PWY&asins=B07TFD7PWY&linkId=37a3a5de357cda77b3ebe0df7fb6dffc&show_border=true&link_opens_in_new_window=true"
+        ></iframe>
+        <iframe
+          style={{
+            width: "120px",
+            height: "240px",
+            marginWidth: "0",
+            marginHeight: "0",
+            scrolling: "no",
+            frameBorder: "0",
+          }}
+          src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=sakshamgoyal0-21&marketplace=amazon&region=IN&placement=B086WM3RB8&asins=B086WM3RB8&linkId=710cf5347b50208256189185aea33121&show_border=true&link_opens_in_new_window=true"
         ></iframe>
         <Footer />
       </div>
